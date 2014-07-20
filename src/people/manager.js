@@ -4,8 +4,7 @@ var Person = require('./person.js'),
 
 // Manager constructor
 function Manager(name, contact) {
-  this.name = name;
-  this.contact = contact;
+  Person.call(this, name, contact);
   this.properties = [];
 }
 

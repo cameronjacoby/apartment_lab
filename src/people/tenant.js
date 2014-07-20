@@ -4,8 +4,7 @@ var Person = require('./person.js'),
 
 // Tenant constructor
 function Tenant(name, contact) {
-  this.name = name;
-  this.contact = contact;
+  Person.call(this, name, contact);
   this.references = [];
 };
 
