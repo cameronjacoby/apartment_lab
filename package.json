@@ -3,13 +3,13 @@
   "version": "0.0.1",
   "description": "a lab for playing with constructors and prototypes in JS",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --reporter spec"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/wdi-sf-july/apartment_lab.git"
   },
-  "author": "",
+  "author": "Cameron Jacoby",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/wdi-sf-july/apartment_lab/issues"

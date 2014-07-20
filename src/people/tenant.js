@@ -1,12 +1,21 @@
-var person = require("./person.js");
+// require the Person constructor and the inherit function
+var Person = require('./person.js'),
+    inherit = require('./../inherit.js');
 
+// Tenant constructor
 function Tenant(name, contact) {
-  // set this.name, and contact
+  this.name = name;
+  this.contact = contact;
   this.references = [];
 };
 
-Tenant.prototype.addReference = function(reference){
-  // add reference to references
+// Tenant inherits from Person
+inherit(Tenant, Person);
+
+// Tenant has the ability to add references
+Tenant.prototype.addReference = function(reference) {
+  this.references.push(reference);
 };
 
+// exports the Tenant constructor
 module.exports = Tenant;

@@ -1,6 +1,20 @@
-var property = require("./property");
+// require the Property constructor and the inherit function
+var Property = require('./property.js'),
+    inherit = require('./../inherit.js');
 
-function Duplex(address) {
-  // A duplex only has 2 units;
+// Duplex constructor
+function Duplex(address, one, two) {
+  this.address = address;
+  this.units = [one, two];
 }
+
+// Duplex inherits from Property
+inherit(Duplex, Property);
+
+// Duplex can only have two units // cannot add more
+Property.prototype.addUnit = function(unit) {
+  return this.units;
+};
+
+// exports the Duplex constructor
 module.exports = Duplex;
