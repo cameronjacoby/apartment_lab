@@ -1,6 +1,5 @@
-// require the Property constructor and the inherit function
-var Property = require('./property.js'),
-    inherit = require('./../inherit.js');
+var Property = require('./property'),
+    inherit = require('../inherit');
 
 // ApartmentBuilding constructor
 function ApartmentBuilding(name, address) {
@@ -12,5 +11,4 @@ function ApartmentBuilding(name, address) {
 // ApartmentBuilding inherits from Property
 inherit(ApartmentBuilding, Property);
 
-// exports the ApartmentBuilding constructor
 module.exports = ApartmentBuilding;

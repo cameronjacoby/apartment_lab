@@ -1,6 +1,6 @@
-// require the Person constructor and the inherit function
-var Person = require('./person.js'),
-    inherit = require('./../inherit.js');
+var Person = require('./person'),
+    Property = require('../property_types/property'),
+    inherit = require('../inherit');
 
 // Manager constructor
 function Manager(name, contact) {
@@ -13,7 +13,13 @@ inherit(Manager, Person);
 
 // Manager has the ability to add properties
 Manager.prototype.addProperty = function(property) {
-  this.properties.push(property);
+  // first check if property is an INSTANCE of PROPERTY
+  if (property instanceof Property) {
+    this.properties.push(property);
+  }
+  else {
+    console.error('Failed to add property:', property);
+  }
 };
 
 // Manager has the ability to remove properties
@@ -22,5 +28,4 @@ Manager.prototype.removeProperty = function(property) {
   this.properties.splice(propertyIndex, 1);
 };
 
-// exports the Manager constructor
 module.exports = Manager;

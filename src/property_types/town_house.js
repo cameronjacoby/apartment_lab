@@ -1,6 +1,5 @@
-// require the Property constructor and the inherit function
-var Property = require('./property.js'),
-    inherit = require('./../inherit.js');
+var Property = require('./property'),
+    inherit = require('../inherit');
 
 // TownHouse constructor
 function TownHouse(address, sqft, rent) {
@@ -37,12 +36,7 @@ TownHouse.prototype.removeTenant = function(tenantLeaving) {
   }
 };
 
-// exports the TownHouse constructor
 module.exports = TownHouse;
-
-
-
-
 
 
 

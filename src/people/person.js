@@ -4,5 +4,4 @@ function Person(name, contact) {
   this.contact = contact;
 };
 
-// exports the Person constructor
 module.exports = Person;

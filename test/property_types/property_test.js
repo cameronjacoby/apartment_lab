@@ -1,9 +1,9 @@
 var expect = require('chai').expect,
-  Property = require('./../../src/property_types/property.js'),
-  Unit = require('./../../src/unit.js'),
-  Manager = require('./../../src/people/manager.js'),
-  Tenant = require('./../../src/people/tenant.js'),
-  Person = require('./../../src/people/person.js');
+  Property = require('../../src/property_types/property'),
+  Unit = require('../../src/unit'),
+  Manager = require('../../src/people/manager'),
+  Tenant = require('../../src/people/tenant'),
+  Person = require('../../src/people/person');
 
 describe('Property', function(){
 	var avalon = new Property('555 5th Street');
@@ -76,8 +76,6 @@ describe('Property', function(){
     });
   });
 });
-
-
 
 
 

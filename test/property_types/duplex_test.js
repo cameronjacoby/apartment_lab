@@ -1,10 +1,10 @@
 var expect = require('chai').expect,
-	Duplex = require('./../../src/property_types/duplex.js'),
-  Property = require('./../../src/property_types/property.js'),
-  Unit = require('./../../src/unit.js'),
-  Manager = require('./../../src/people/manager.js');
-  Tenant = require('./../../src/people/tenant.js');
-  Person = require('./../../src/people/person.js');
+	Duplex = require('../../src/property_types/duplex'),
+  Property = require('../../src/property_types/property'),
+  Unit = require('../../src/unit'),
+  Manager = require('../../src/people/manager');
+  Tenant = require('../../src/people/tenant');
+  Person = require('../../src/people/person');
 
 describe('Duplex', function(){
   var one = new Unit('one', terraceLane, 800, '$3000'),
@@ -72,9 +72,6 @@ describe('Duplex', function(){
     });
   });
 });
-
-
-
 
 
 

@@ -1,11 +1,11 @@
 var expect = require('chai').expect,
-	TownHouse = require('./../../src/property_types/town_house.js'),
-  Property = require('./../../src/property_types/property.js'),
-  Manager = require('./../../src/people/manager.js');
-  Tenant = require('./../../src/people/tenant.js');
-  Person = require('./../../src/people/person.js');
+	TownHouse = require('../../src/property_types/town_house'),
+  Property = require('../../src/property_types/property'),
+  Manager = require('../../src/people/manager');
+  Tenant = require('../../src/people/tenant');
+  Person = require('../../src/people/person');
 
-describe('TownHouse', function(){
+describe('TownHouse', function() {
 	var wrightson = new TownHouse('223 Wrightson Ave', 2000, '$6500');
     bob = new Manager('Bob Smith', '555-555-555');
     cameron = new Tenant('Cameron Jacoby', '555-555-555'),
@@ -63,11 +63,6 @@ describe('TownHouse', function(){
     });
   });
 });
-
-
-
-
-
 
 
 

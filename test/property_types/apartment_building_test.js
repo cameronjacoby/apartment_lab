@@ -1,10 +1,10 @@
 var expect = require('chai').expect,
-	ApartmentBuilding = require('./../../src/property_types/apartment_building.js'),
-  Property = require('./../../src/property_types/property.js'),
-  Unit = require('./../../src/unit.js'),
-  Manager = require('./../../src/people/manager.js');
-  Tenant = require('./../../src/people/tenant.js');
-  Person = require('./../../src/people/person.js');
+	ApartmentBuilding = require('../../src/property_types/apartment_building'),
+  Property = require('../../src/property_types/property'),
+  Unit = require('../../src/unit'),
+  Manager = require('../../src/people/manager');
+  Tenant = require('../../src/people/tenant');
+  Person = require('../../src/people/person');
 
 describe('ApartmentBuilding', function(){
 	var terraces = new ApartmentBuilding('Terraces', '66 7th Street');

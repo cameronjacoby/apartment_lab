@@ -1,5 +1,4 @@
-// require the Unit constructor
-var Unit = require('./../unit.js');
+var Unit = require('../unit');
 
 // Property constructor
 function Property(address) {
@@ -58,11 +57,7 @@ Property.prototype.rentedUnits = function() {
   return rentUnits;
 };
 
-// exports the Property constructor
 module.exports = Property;
-
-
-
 
 
 
